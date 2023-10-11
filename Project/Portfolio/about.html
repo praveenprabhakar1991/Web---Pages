@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+          crossorigin="anonymous"></script>
+
+     <title>About Us</title>
+</head>
+
+<body>
+
+     <!-- NavBar -->
+     <div>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <a class="navbar-brand" href="#">iPort</a>
+
+               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                         <li class="nav-item "><a class="nav-link" href="/">Home </a></li>
+                         <li class="nav-item active"><a class="nav-link" href="/about.html">About Us</a></li>
+                         <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Topics
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                   <a class="dropdown-item" href="#">Technology</a>
+                                   <a class="dropdown-item" href="#">Web Development</a>
+                                   <a class="dropdown-item" href="#">Front-End</a>
+                                   <a class="dropdown-item" href="#">Back-End</a>
+                                   <a class="dropdown-item" href="#">Full Stack</a>
+                                   <div class="dropdown-divider"></div>
+                                   <a class="dropdown-item" href="#">Support</a>
+                              </div>
+                         </li>
+                         <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="mx-3">
+                         <button type="submit" class="btn btn-outline-success mx-2" data-toggle="modal"
+                              data-target="#LoginModal">Login</button>
+                         <button type="submit" class="btn btn-outline-primary" data-toggle="modal"
+                              data-target="#SignupModal">Sign Up</button>
+                    </div>
+               </div>
+          </nav>
+     </div>
+
+     <!-- Login Modal -->
+     <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title" id="LoginModalLabel">Login Modal</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+                    <div class="modal-body">
+                         <!--Form Starts Here-->
+                         <div class="container">
+                              <form>
+                                   <div class="form-group">
+                                        <label>Email Id</label>
+                                        <input type="email" class="form-control" required placeholder="Enter Email Id">
+                                   </div>
+                                   <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" required
+                                             placeholder="Enter Password">
+                                   </div>
+                                   <div class="form-group">
+                                        <input type="submit" value="Login" class="btn btn-success ">
+                                   </div>
+                                   Don't Have an Account? Sign Up</a>
+                              </form>
+                              <!--Form Ends Here-->
+                         </div>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- Sign Up Modal -->
+     <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title" id="SignupModalLabel"> Sign Up Modal</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="container">
+                              <i class="text-muted"> Please fill in this form to create an account.</i>
+                              <!--Form Starts Here-->
+                              <form>
+                                   <div class="form-group">
+                                        <label>Email Id</label>
+                                        <input type="email" class="form-control" required placeholder="Enter Email Id">
+                                   </div>
+                                   <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" required
+                                             placeholder="Enter Password">
+                                   </div>
+                                   <div class="form-group">
+                                        <label>Repeat Password</label>
+                                        <input type="password" class="form-control" required
+                                             placeholder="Repeat Password"><br>
+                                        <input type="checkbox"> Remember Me <br><br>
+                                        <p> By creating an account you agree to our <a href="#"> Terms & Privacy</a>.
+                                        </p>
+                                        <div class="row">
+                                             <div class="col-md-6">
+                                                  <div class="form-group">
+                                                       <input type="submit" value="Sign Up" class="  btn btn-primary ">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                         </div>
+                    </div>
+                    </form>
+                    <!--Form Ends Here-->
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- Featurette -->
+     <div class="container mt-5">
+          <div class="row featurette d-flex justify-content-center align-items-center">
+               <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Front End Development.<span
+                              class="text-body-secondary">It’ll blow your mind.</span></h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam sunt eaque ratione, quidem quasi cupiditate omnis dolor cumque nobis, voluptatum aut at nostrum esse, distinctio quas corporis eligendi pariatur? Incidunt sint numquam enim, porro vitae voluptate illum voluptates veritatis minus et harum deleniti tempore rem iure laudantium ipsa voluptas.</p>
+               </div>
+               <div class="col-md-5">
+                    <img class="img-fluid" src="https://source.unsplash.com/500x500/?technology,frontend" alt="">
+               </div>
+          </div>
+          <hr class="featurette-divider">
+
+          <div class="row featurette featurette d-flex justify-content-center align-items-center">
+               <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Back End Development.<span
+                              class="text-body-secondary">See for yourself.</span></h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint est id qui optio recusandae laudantium quisquam. Autem tempora nostrum quae adipisci omnis mollitia suscipit incidunt cum modi! Dolorum similique nihil reiciendis eos ea placeat totam optio rerum minus minima aut ipsum quasi, iste ex, illo sint culpa fugit, harum perspiciatis.</p>
+               </div>
+               <div class="col-md-5 order-md-1">
+                    <img class="img-fluid" src="https://source.unsplash.com/500x500/?technology,backend" alt="">
+               </div>
+          </div>
+          <hr class="featurette-divider">
+
+          <div class="row featurette featurette d-flex justify-content-center align-items-center">
+               <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Full Stact Development. <span
+                              class="text-body-secondary">Checkmate.</span></h2>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos rerum non ducimus veniam saepe laborum? Cumque dignissimos totam error rerum ab rem nobis ipsam sint itaque quisquam consequatur labore enim nostrum possimus vitae facere perspiciatis voluptates mollitia odio libero, nihil quaerat obcaecati! Perferendis quia sunt suscipit autem libero! Quod, repellat.</p>
+               </div>
+               <div class="col-md-5">
+                    <img class="img-fluid" src="https://source.unsplash.com/500x500/?technology,fullstack" alt="">
+               </div>
+          </div>          
+     </div>
+     <hr class="featurette-divider">
+     <!-- Footer -->
+     <footer class="container "  >
+          <p class="float-right"><a href="#">Back to top</a></p>
+          <p>© 2020-2021, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+     </footer>
+
+</body>
+</html>
